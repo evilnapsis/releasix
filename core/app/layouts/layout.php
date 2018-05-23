@@ -5,14 +5,14 @@
     <title>Releasix | Dashboard</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
-    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="admin/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
-    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="admin/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
     
-    <link href="plugins/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
-    <link href="plugins/dist/css/skins/skin-blue.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+    <link href="admin/plugins/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="admin/plugins/dist/css/skins/skin-blue.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="admin/plugins/datatables/dataTables.bootstrap.css">
         
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,27 +20,27 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="plugins/jquery/jquery-2.1.4.min.js"></script>
-    <script src="plugins/morris/raphael-min.js"></script>
-    <script src="plugins/morris/morris.js"></script>
-    <link rel="stylesheet" href="plugins/morris/morris.css">
-    <link rel="stylesheet" href="plugins/morris/example.css">
-    <script src="plugins/jspdf/jspdf.min.js"></script>
-    <script src="plugins/jspdf/jspdf.plugin.autotable.js"></script>
+    <script src="admin/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="admin/plugins/morris/raphael-min.js"></script>
+    <script src="admin/plugins/morris/morris.js"></script>
+    <link rel="stylesheet" href="admin/plugins/morris/morris.css">
+    <link rel="stylesheet" href="admin/plugins/morris/example.css">
+    <script src="admin/plugins/jspdf/jspdf.min.js"></script>
+    <script src="admin/plugins/jspdf/jspdf.plugin.autotable.js"></script>
     <?php if(isset($_GET["view"]) && $_GET["view"]=="sell"):?>
-      <script type="text/javascript" src="plugins/jsqrcode/llqrcode.js"></script>
-      <script type="text/javascript" src="plugins/jsqrcode/webqr.js"></script>
+      <script type="text/javascript" src="admin/plugins/jsqrcode/llqrcode.js"></script>
+      <script type="text/javascript" src="admin/plugins/jsqrcode/webqr.js"></script>
     <?php endif;?>
-    <link href='plugins/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
-    <link href='plugins/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
-    <script src='plugins/fullcalendar/moment.min.js'></script>
-    <script src='plugins/fullcalendar/fullcalendar.min.js'></script>
-    <script src='plugins/fullcalendar/locale/es.js'></script>
+    <link href='admin/plugins/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
+    <link href='admin/plugins/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='admin/plugins/fullcalendar/moment.min.js'></script>
+    <script src='admin/plugins/fullcalendar/fullcalendar.min.js'></script>
+    <script src='admin/plugins/fullcalendar/locale/es.js'></script>
   </head>
-    <script src="plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <link href="plugins/contextmenu/contextmenu.css" rel="stylesheet">
-    <script src="plugins/contextmenu/jquery.ui.position.js" type="text/javascript"></script>
-    <script src="plugins/contextmenu/contextmenu.js"></script>
+    <script src="admin/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="admin/plugins/contextmenu/contextmenu.css" rel="stylesheet">
+    <script src="admin/plugins/contextmenu/jquery.ui.position.js" type="text/javascript"></script>
+    <script src="admin/plugins/contextmenu/contextmenu.js"></script>
 
   <body class="<?php if(isset($_SESSION["user_id"]) || isset($_SESSION["client_id"])):?>  skin-blue sidebar-mini <?php else:?>login-page<?php endif; ?>" >
     <div class="wrapper">
@@ -179,10 +179,10 @@
     <!-- jQuery 2.1.4 -->
     <!-- Bootstrap 3.3.2 JS -->
     <!-- AdminLTE App -->
-    <script src="plugins/dist/js/app.min.js" type="text/javascript"></script>
+    <script src="admin/plugins/dist/js/app.min.js" type="text/javascript"></script>
 
-    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="admin/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="admin/plugins/datatables/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $(".datatable").DataTable({

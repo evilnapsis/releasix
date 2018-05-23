@@ -4,5 +4,5 @@ Sistema de control de Proyectos, Licensias y Lanzamientos... hecho con PHP y MyS
 - Usuarios
 - Proyectos
 - Releases
-- Licensias
+- Licencias
 <p>Powered by <a href="http://evilnapsis.com/">Evilnapsis</a> &copy; 2018</p>
