@@ -1,0 +1,77 @@
+<?php 
+$user = ContactData::getById($_GET["id"]);
+?>
+<div class="row">
+	<div class="col-md-12">
+	<h1>Editar Contacto</h1>
+	<br>
+		<form class="form-horizontal" method="post" id="addproduct" action="index.php?view=updatecontact" role="form">
+
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Nombre*</label>
+    <div class="col-md-6">
+      <input type="text" name="name" value="<?php echo $user->name;?>" class="form-control" id="name" placeholder="Nombre">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Apellido*</label>
+    <div class="col-md-6">
+      <input type="text" name="lastname" value="<?php echo $user->lastname;?>" required class="form-control" id="lastname" placeholder="Apellido">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Direccion*</label>
+    <div class="col-md-6">
+      <input type="text" name="address" value="<?php echo $user->address;?>" class="form-control"  id="username" placeholder="Direccion">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Codigo postal*</label>
+    <div class="col-md-6">
+      <input type="text" name="cp" class="form-control"  value="<?php echo $user->cp;?>"  id="cp" placeholder="Codigo postal">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Ciudad*</label>
+    <div class="col-md-6">
+      <input type="text" name="city" class="form-control" value="<?php echo $user->city;?>"   id="city" placeholder="Ciudad">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Email*</label>
+    <div class="col-md-6">
+      <input type="text" name="email" value="<?php echo $user->email;?>" class="form-control" id="email" placeholder="Email">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Telefono</label>
+    <div class="col-md-6">
+      <input type="text" name="phone"  value="<?php echo $user->phone;?>"  class="form-control" id="inputEmail1" placeholder="Telefono">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Telefono 2*</label>
+    <div class="col-md-6">
+      <input type="text" name="phone2" value="<?php echo $user->phone2;?>"  class="form-control" id="phone2" placeholder="Telefono">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Descripcion*</label>
+    <div class="col-md-6">
+      <textarea name="description" class="form-control" id="description" placeholder="Descripcion"><?php echo $user->description;?></textarea>
+    </div>
+  </div>
+
+  <p class="alert alert-info">* Campos obligatorios</p>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+    <input type="hidden" name="id" value="<?php echo $user->id;?>">
+      <button type="submit" class="btn btn-primary">Actualizar Contacto</button>
+    </div>
+  </div>
+</form>
+	</div>
+</div>
